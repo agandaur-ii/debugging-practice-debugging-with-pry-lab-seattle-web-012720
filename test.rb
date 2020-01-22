@@ -6,5 +6,4 @@ def snake_it_up(string)
   end
 end
 
-new = "suprise!"
-puts new[0]
+puts snake_it_up("suprise!")
