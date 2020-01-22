@@ -1,9 +1,9 @@
-def start_game(player1, player2)
-  "Hello #{player1} & #{player2}"
+def snake_it_up(string)
+  if string[0] == "s"
+  10 * "s" + string
+  else
+  string
+  end
 end
 
-def play_game(player2)
-  "#{player1} is better than #{player2}"
-end
-
-puts start_game("Chris", "Adam")
+puts "suprise!"[0]
