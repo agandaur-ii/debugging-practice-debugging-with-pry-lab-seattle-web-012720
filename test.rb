@@ -9,8 +9,8 @@ class GasStation
 
 end
 
-puts petrol_petes = GasStation.new("Petrol Pete's", 50)
-puts "==================================="
-puts seashore_shell = GasStation.new("The Seashore Shell", 40)
-puts "==================================="
-puts dinobones = GasStation.new("Dino Bones Gas and Grill", 60)
+petrol_petes = GasStation.new("Petrol Pete's", 50)
+
+seashore_shell = GasStation.new("The Seashore Shell", 40)
+
+dinobones = GasStation.new("Dino Bones Gas and Grill", 60)
