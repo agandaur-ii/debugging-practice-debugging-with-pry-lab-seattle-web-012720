@@ -21,4 +21,4 @@ def engage
   greet_crew(crew)
 end
 
-pp engage
+pp greet_crew(crew)
