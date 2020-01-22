@@ -1,9 +1,24 @@
-def snake_it_up(string)
-  if string[0] == "s"
-  "s" * 10 + string
-  else
-  string
-  end
+def generate_star_date
+  (rand(100000) + 400000) / 10.0
 end
 
-puts snake_it_up("suprise!")
+
+def state_log(star_date)
+  "Captain's Log, star date #{star_date}."
+end
+
+def crew
+  ["Geordi", "Data", "Worf", "William", "Beverly", "Deanna"]
+end
+
+def greet_crew (crew)
+  crew.each {|crew_member| puts "Hello #{crew_member}."}
+end
+
+def engage
+  date = generate_star_date
+  state_log(date)
+  greet_crew(crew)
+end
+
+pp engage
