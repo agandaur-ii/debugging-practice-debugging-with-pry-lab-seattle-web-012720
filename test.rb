@@ -1,24 +1,9 @@
-def get_user_input
-  gets.chomp
+def start_game(player1, player2)
+  "Hello #{player1} & #{playar2}"
 end
 
-def prompt_user
-  puts "What would you like to do?"
-  puts "1.) Eat a hamburger."
-  puts "2.) Eat a ham."
+def play_game(player2)
+  "#{player1} is better than #{player2}"
 end
 
-def selection(num)
-  if num == 1
-     "YUM YUM MUNCH MUNCH MUNCH"
-  elsif num == 2
-     "HAM HAM HAM IN MY TUMMY"
-  end
-end
-
-def runner
-  prompt_user
-  selection(get_user_input)
-end
-
-puts selection(1)
+puts start_game("Chris", "Adam")
