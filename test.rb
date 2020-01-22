@@ -1,18 +1,24 @@
-class GasStation
-
-  attr_reader :brand, :unleaded_price
-
-  def initialize(brand, unleaded_price)
-    @brand = brand
-    @unleaded_price = unleaded_price + 40
-  end
-
+def get_user_input
+  gets.chomp
 end
 
-petrol_petes = GasStation.new("Petrol Pete's", 50)
+def prompt_user
+  puts "What would you like to do?"
+  puts "1.) Eat a hamburger."
+  puts "2.) Eat a ham."
+end
 
-seashore_shell = GasStation.new("The Seashore Shell", 40)
+def selection(num)
+  if num = 1
+     "YUM YUM MUNCH MUNCH MUNCH"
+  elsif num = 2
+     "HAM HAM HAM IN MY TUMMY"
+  end
+end
 
-dinobones = GasStation.new("Dino Bones Gas and Grill", 60)
+def runner
+  prompt_user
+  selection(get_user_input)
+end
 
-puts dinobones.unleaded_price
+puts selection(1)
