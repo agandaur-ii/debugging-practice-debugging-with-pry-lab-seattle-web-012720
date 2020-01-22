@@ -15,4 +15,4 @@ seashore_shell = GasStation.new("The Seashore Shell", 40)
 
 dinobones = GasStation.new("Dino Bones Gas and Grill", 60)
 
-puts 
+puts dinobones.unleaded_price
